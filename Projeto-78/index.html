@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia</title>
+</head>
+<body style = "text-align:center;">
+    
+    <h1>Meu álbum de familia</h1>
+
+    <img id="album" src="album.png">
+
+    <p id="texto">Meu álbum de família</p>
+
+    <button onclick="proximo()">próximo</button>
+
+
+
+    <script>
+
+        var text = ["Masayuki" , "Misaki"]
+
+        var imagem = [ "masayuki_oka_hase.png" , "Misaki_Yamada.jpng" ];
+
+        var i = 1;
+        
+        function proximo()
+        {
+            document.getElementById(album).src=imagem[i];
+            document.getElementById(texto).innerHTML = text[i]
+            i++;
+            if (i>1)
+            {i=0;}
+        }
+
+    </script>
+
+</body>
+</html>
